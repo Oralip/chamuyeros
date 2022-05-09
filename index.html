@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHRUNNERS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+ 
+<!-- Logo-->
+<section class="logo">
+    <div><img src="logo.png" style="width:65% "></div>
+       
+</section>
+
+<!-- MENU -->
+<section class="menu" style="margin-bottom:90px">  
+  <button class="btn default">Team</button>
+  <button class="btn default">Merch</button>
+  <button class="btn default">Contact</button>
+</section>
+
+
+<!-- fotos equipo -->
+<section>
+  <section>
+  <h1 class="text">TEAM</h1>
+  </section>
+  <section class="fotos">
+  <div class="container">
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="david.png">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">David Rivas</h3>
+          <p class="content-text">Runner</p>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="ora.png">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Oralip Sepúlveda</h3>
+          <p class="content-text">Runner</p>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="luis.png">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Luis Campos</h3>
+          <p class="content-text">Runner</p>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="gera.png">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Geral Sepúlveda</h3>
+          <p class="content-text">Runner</p>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="marie.png">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Marie Obispo</h3>
+          <p class="content-text">Runner</p>
+        </div>
+    </div>
+  </div>
+  </section>
+</section>
+
+<!-- <section class="menu">
+    <p style=color:white;>TEAM</p>
+    <section>
+        <img src="david.png" style="width:20%" class="fotos">
+        <img src="ora.png" style="width:20%" class="fotos"> 
+        <img src="luis.png" style="width:20%" class="fotos">
+    </section>
+    <section class="fotos">
+        <img src="gera.png" style="width:20%" class="fotos">
+        <img src="marie.png" style="width:20%" class="fotos">
+        
+    </section>
+</section> -->
+
+<section class="menu">
+  <h1 class="text">MERCH</h1>
+  <div class="duo">
+    <img class="mySlides" src="remeras.png" style="width:60%">
+    <img class="mySlides" src="buzo.png" style="width:60%">
+    <img class="mySlides" src="bag.png" style="width:60%">
+  </div>
+  <form>      
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT"/>
+  </form>
+
+</section>
+ 
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "inline-block";
+      setTimeout(carousel, 3000);
+    }
+</script>
+
+
+      <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <p class="w3-medium">
+      Powered by <a href="https://github.com/Oralip/chamuyeros" target="_blank">oralip</a>
+    </p>
+  </footer>
+</body>
+</html>
