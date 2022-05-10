@@ -1,6 +1,10 @@
-body {
+html, body {
     background-color:black;
+    height: 100%;
+    width: 100%;
     }
+
+
 
 .main-title{
       color: #2d2d2d;
@@ -12,17 +16,28 @@ body {
 .container{
       display:inline-block;
       width: 100%;
-      position:relative;
+      top: 50%;
+      left: 50%;
+    }
+
+    .picture {
+      width: 70%;
+    }
+
+@media screen and (max-width: 1240px){
+      .picture {
+        width: 100%;
+      }
     }
 @media screen and (max-width: 340px){
-      .container{
+      .container {
         display: block;
         width: 100%;
       }
     }
-    
+ 
 @media screen and (min-width: 200px){
-      .container{
+      .container {
         width: 32.33333%;
       }
     }
@@ -112,14 +127,22 @@ body {
         cursor: pointer;
         border-radius: 5px;
         font-family: 'Press Start 2P' ;
+        margin-bottom:10px;
+
       }
-.fotos{
+.merch, .fotos{
     text-align: center;
     margin-top: 35px;
 
     
 }
-    
+ 
+.menu{
+  text-align: center;
+  margin-top: 35px;
+  position:  relative;
+  
+}
 .default {
     border-color: #e7e7e7;
     color:whitesmoke;
@@ -129,9 +152,13 @@ body {
     background: #e7e7e7;
   }
 
-.menu,.logo {
-        margin-top: 45px;
+.logo {
         text-align: center;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
     }
 
